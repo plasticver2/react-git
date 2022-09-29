@@ -60,6 +60,18 @@ function App() {
       }
     }
     content = <Artical title = {title} body={body}></Artical>
+    contextControl = <>
+    <li><input type="button" value="Delete" onClick={()=>{
+        const newTopics = []
+        for(let i=0; i<topics.length; i++){
+          if(topics[i].id !== id){
+            newTopics.push(topics[i]);
+          }
+        }
+        setTopics(newTopics);
+        setMode('WELCOME');
+      }} /></li>
+    </>
   }
   return (
     <div>
