@@ -1,3 +1,5 @@
+// 비주얼 스튜디오 코드 연결 확인!
+
 import logo from './logo.svg';
 import './App.css';
 
